@@ -28,6 +28,7 @@ let package = Package(
                 "JSONModelNetworking/JSONAPI.m"
             ],
             sources: ["JSONModel", "JSONModelTransformations"],
+            publicHeadersPath: "JSONModelLib.h",
             cSettings: [
                 .headerSearchPath("JSONModel"),
                 .headerSearchPath("JSONModelTransformations")
