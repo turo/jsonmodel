@@ -2,6 +2,8 @@
 //
 //  Package.swift
 //
+
+//            publicHeadersPath: "JSONModelLib.h"
 import PackageDescription
 
 let package = Package(
@@ -21,7 +23,6 @@ let package = Package(
             name: "JSONModel",
             path: "JSONModel",
             sources: ["JSONModel", "JSONModelTransformations"],
-//            publicHeadersPath: "JSONModelLib.h"
             cSettings: [
                 .headerSearchPath("JSONModel"),
                 .headerSearchPath("JSONModelTransformations")
