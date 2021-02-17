@@ -1,5 +1,5 @@
 framework module JSONModel {
-	umbrella header "JSONModelLib.h"
+	umbrella header "../JSONModelLib.h"
 
 	export *
 	module * { export * }

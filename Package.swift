@@ -26,8 +26,9 @@ let package = Package(
                 "JSONModelNetworking"
             ],
             sources: ["JSONModel", "JSONModelTransformations"],
-            publicHeadersPath: "JSONModel.modulemap",
+            publicHeadersPath: "SwiftPackage",
             cSettings: [
+                .headerSearchPath("."),
                 .headerSearchPath("JSONModel"),
                 .headerSearchPath("JSONModelTransformations")
             ]
