@@ -21,6 +21,12 @@ let package = Package(
         .target(
             name: "JSONModel",
             path: "JSONModel",
+            exclude: [
+                "Info.plist",
+                "JSONModelNetworking/JSONModel+networking.m",
+                "JSONModelNetworking/JSONHTTPClient.m",
+                "JSONModelNetworking/JSONAPI.m"
+            ],
             sources: ["JSONModel", "JSONModelTransformations"],
             cSettings: [
                 .headerSearchPath("JSONModel"),
