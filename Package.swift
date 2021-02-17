@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .target(
             name: "JSONModel",
-            path: "JSONModel/",
-            sources: ["JSONModel", "JSONModelNetworking", "JSONModelTransformations"],
+            path: "/",
+            sources: ["JSONModel/JSONModel", "JSONModel/JSONModelTransformations"],
             cSettings: [
                .headerSearchPath("JSONModel")
             ]
