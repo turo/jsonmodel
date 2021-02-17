@@ -22,30 +22,18 @@ let package = Package(
             dependencies: [
                 "JSONModelTransformations"
             ],
-            path: "JSONModel/JSONModel",
-            sources: [
-                ""
-            ],
-            publicHeadersPath: ""
+            path: "JSONModel/JSONModel"
         ),
         .target(
             name: "JSONModelNetworking",
             dependencies: [
                 "JSONModel"
             ],
-            path: "JSONModel/JSONModelNetworking",
-            sources: [
-                ""
-            ],
-            publicHeadersPath: ""
+            path: "JSONModel/JSONModelNetworking"
         ),
         .target(
             name: "JSONModelTransformations",
-            path: "JSONModel/JSONModelTransformations",
-            sources: [
-                ""
-            ],
-            publicHeadersPath: ""
+            path: "JSONModel/JSONModelTransformations"
         )
     ]
 )
