@@ -3,7 +3,6 @@
 //  Package.swift
 //
 
-//            publicHeadersPath: "JSONModelLib.h"
 import PackageDescription
 
 let package = Package(
