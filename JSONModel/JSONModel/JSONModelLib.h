@@ -14,6 +14,6 @@
 #import "JSONKeyMapper.h"
 
 // networking (deprecated)
-#import "JSONHTTPClient.h"
-#import "JSONModel+networking.h"
-#import "JSONAPI.h"
+//#import "JSONHTTPClient.h"
+//#import "JSONModel+networking.h"
+//#import "JSONAPI.h"

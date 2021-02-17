@@ -20,18 +20,27 @@ let package = Package(
     targets: [
         .target(
             name: "JSONModel",
-            path: "JSONModel/",
-            exclude: [
-                "Info.plist",
-                "JSONModelNetworking"
-            ],
-            sources: ["JSONModel", "JSONModelTransformations"],
-            publicHeadersPath: "SwiftPackage",
-            cSettings: [
-                .headerSearchPath("."),
-                .headerSearchPath("JSONModel"),
-                .headerSearchPath("JSONModelTransformations")
+            path: "JSONModel",
+//            exclude: [
+//                "Info.plist",
+//                "JSONModelNetworking"
+//            ],
+            sources: [
+//                "JSONModelLib.h"
+//                "JSONModelTransformations",
+//                "JSONModel"
+                "JSONModel/JSONModel.h",
+                "JSONModel/JSONModel.m",
+                "JSONModel/JSONModelClassProperty.h",
+                "JSONModel/JSONModelClassProperty.m",
+                "JSONModel/JSONModelError.h",
+                "JSONModel/JSONModelError.m",
+                "JSONModelTransformations/JSONKeyMapper.h",
+                "JSONModelTransformations/JSONKeyMapper.m",
+                "JSONModelTransformations/JSONValueTransformer.h",
+                "JSONModelTransformations/JSONValueTransformer.m"
             ]
+//            publicHeadersPath: "JSONModelLib.h"
         )
     ]
 )
