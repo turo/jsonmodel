@@ -19,21 +19,8 @@ let package = Package(
     targets: [
         .target(
             name: "JSONModel",
-            dependencies: [
-                "JSONModelTransformations"
-            ],
-            path: "JSONModel/JSONModel"
-        ),
-        .target(
-            name: "JSONModelNetworking",
-            dependencies: [
-                "JSONModel"
-            ],
-            path: "JSONModel/JSONModelNetworking"
-        ),
-        .target(
-            name: "JSONModelTransformations",
-            path: "JSONModel/JSONModelTransformations"
+            path: "JSONModel/",
+            sources: ["JSONModel", "JSONModelNetworking", "JSONModelTransformations"]
         )
     ]
 )
