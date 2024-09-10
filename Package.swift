@@ -15,32 +15,38 @@ let package = Package(
     ],
     products: [
         .library(name: "JSONModel",
-                 targets: ["JSONModel"])
+                 targets: ["JSONModel", "JSONModelNetworking" , "JSONModelTransformations"])
     ],
     targets: [
         .target(
             name: "JSONModel",
-            path: "JSONModel",
-//            exclude: [
-//                "Info.plist",
-//                "JSONModelNetworking"
-//            ],
+            dependencies: [
+                "JSONModelTransformations"
+            ],
+            path: "JSONModel/JSONModel",
             sources: [
-//                "JSONModelLib.h"
-//                "JSONModelTransformations",
-//                "JSONModel"
-                "JSONModel/JSONModel.h",
-                "JSONModel/JSONModel.m",
-                "JSONModel/JSONModelClassProperty.h",
-                "JSONModel/JSONModelClassProperty.m",
-                "JSONModel/JSONModelError.h",
-                "JSONModel/JSONModelError.m",
-                "JSONModelTransformations/JSONKeyMapper.h",
-                "JSONModelTransformations/JSONKeyMapper.m",
-                "JSONModelTransformations/JSONValueTransformer.h",
-                "JSONModelTransformations/JSONValueTransformer.m"
-            ]
-//            publicHeadersPath: "JSONModelLib.h"
+                ""
+            ],
+            publicHeadersPath: ""
+        ),
+        .target(
+            name: "JSONModelNetworking",
+            dependencies: [
+                "JSONModel"
+            ],
+            path: "JSONModel/JSONModelNetworking",
+            sources: [
+                ""
+            ],
+            publicHeadersPath: ""
+        ),
+        .target(
+            name: "JSONModelTransformations",
+            path: "JSONModel/JSONModelTransformations",
+            sources: [
+                ""
+            ],
+            publicHeadersPath: ""
         )
     ]
 )
